@@ -16,6 +16,11 @@ spring:
   
 server:
   port: 8001
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
 ---
 spring:
   profiles: item2
